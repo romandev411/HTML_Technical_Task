@@ -1,0 +1,27 @@
+.foot-menu {
+    display: flex;
+}
+
+.foot-menu__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.foot-menu__link {
+    display: block;
+    font-size: $mid-font-size;
+    color: $main-color;
+    font-family: $sub-font-family;
+    font-weight: 300;
+    transition: color $anim;
+
+    @include hover {
+        &:hover,
+        &:focus {
+            color: $sub-color;
+        }
+    }
+
+    &:active {
+        opacity: .7;
+    }
+}

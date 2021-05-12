@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'icon font';
+    src: url('../fonts/icons/font.woff2') format('woff2'),
+        url('../fonts/icons/font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class*='icon-'] {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+[class*='icon-']:before {
+    font-family: 'icon font';
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before { content: '\e800'; }
+.icon-instagram:before { content: '\e801'; }
+.icon-whatsapp:before { content: '\e802'; }

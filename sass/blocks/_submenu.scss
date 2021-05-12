@@ -1,0 +1,49 @@
+.submenu {
+    display: flex;
+}
+
+.submenu__item--active .submenu__link {
+    color: $sub-color;
+    border-color: $sub-color;
+}
+
+.submenu__link {
+    display: block;
+    padding: 30px 15px;
+    padding-bottom: 26px;
+    border-bottom: 4px solid transparent;
+    font-size: $main-font-size;
+    color: $main-color;
+    font-family: $sub-font-family;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: color $anim,
+        border-color $anim;
+
+    @include hover {
+        &:hover,
+        &:focus {
+            color: $sub-color;
+            border-color: $sub-color;
+        }
+    }
+
+    &:active {
+        opacity: .7;
+    }
+}
+
+.submenu__text {
+    @include media-exsm {
+        display: none;
+    }
+}
+
+.submenu__sub {
+    display: none;
+
+    @include media-exsm {
+        display: block;
+    }
+}

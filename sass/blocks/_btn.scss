@@ -1,0 +1,31 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 120px;
+    height: 32px;
+    padding: 0 8px;
+    border: 1px solid;
+    border-radius: 16px;
+    color: $main-color;
+    font-size: $main-font-size;
+    font-family: $sub-font-family;
+    background-color: $main-bg;
+    transition: $anim;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    @include hover {
+        &:hover,
+        &:focus {
+            color: $sub-color;
+        }
+    }
+
+    &:active {
+        background-color: #0463d2;
+        border-color: #0463d2;
+        color: #fff;
+        transition: none;
+    }
+}

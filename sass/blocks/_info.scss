@@ -1,0 +1,22 @@
+.info {
+    font-size: $mid-font-size;
+    color: $main-color;
+    font-family: $sub-font-family;
+    font-weight: 300;
+}
+
+.info__title {
+    margin-bottom: 8px;
+}
+
+.info__item-cell {
+    line-height: 1.5;
+}
+
+a.info__item-cell:active {
+    opacity: .7;
+}
+
+.info__item-cell[href^='mailto'] {
+    color: $sub-color;
+}
